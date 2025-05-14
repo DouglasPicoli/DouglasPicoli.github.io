@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h1, h2, h3, p {
+            color: #c73949;
+            font-family:'Poppins', sans-serif;
+        }
+
+        .lista {
+            background-color: #2a0404;
+            padding: 5px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .foot {
+            padding: 20px;
+        }
+
+        .botoes {
+            padding: 10px 100px;
+            display: flex;
+            gap: 10px;
+            color: rgb(255, 255, 255);
+            background-color: #000000;
+            font-size: 20px;
+            border: none;                  
+            cursor: pointer;              
+            transition: all 0.3s ease;  
+            width: 100%;   
+        }
+
+        .menu {
+            padding: 10px 100px;
+            display: flex;
+            gap: 10px;
+            color: rgb(255, 255, 255);
+            background-color: #2a0404;
+            font-size: 20px;
+            border: none;                  
+            cursor: pointer;              
+            transition: all 0.3s ease;  
+        }
+
+        .botoes:hover, .menu:hover {
+            background-color: #a00000;
+            transform: scale(1.05);
+        }
+
+        a {
+            color: rgb(114, 114, 114);
+            text-decoration: none;
+            transition: filter 0.3s;
+        }   
+
+        a:hover {
+            filter: brightness(2);
+        }
+
+        .image-container {
+    flex-shrink: 0;
+    max-width: 750px;
+    width: 75%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+        .image-container img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .image-container img.active {
+            opacity: 1;
+        }
+
+        .logo img {
+            width: 25%;
+        }
+        .conteudo-supercarros {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .texto-supercarros {
+            max-width: 500px;
+        }
+
+        .texto-supercarros h2, .texto-supercarros h3 {
+            margin: 0 0 20px 0;
+        }
+
+    </style>      
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="Imagens/logo2.png"></div>
+    </header>
+    <title>Home</title>
+    <div class="lista">
+        <button class="menu" onclick="window.location.href='carros.html'">CARROS</button>
+        <button class="menu" onclick="window.location.href='tabela.html'">COMPARAR</button>
+    </div>
+
+    <h1>Veja todos os Super Carros em nosso site!</h1>
+
+    <div class="conteudo-supercarros">
+        <div class="texto-supercarros">
+            <h2>O que são Super Carros?</h2>
+            <h3>
+                Super carros, também conhecidos como superesportivos, são veículos de alto desempenho desenvolvidos para entregar velocidade impressionante, aceleração rápida e dirigibilidade precisa. Equipados com motores extremamente potentes e tecnologias automotivas avançadas, esses carros são projetados com foco em performance, muitas vezes superando os limites dos veículos convencionais tanto em pista quanto em estrada. Seu design costuma ser aerodinâmico e agressivo, refletindo não apenas funcionalidade, mas também exclusividade e luxo. Produzidos em quantidades limitadas e com materiais de alta qualidade, os super carros representam o ápice da engenharia automotiva, sendo símbolo de status e inovação, frequentemente associados a marcas lendárias como Ferrari, Lamborghini, McLaren, Porsche e Bugatti.
+            </h3>
+        </div>
+
+        <div class="image-container" id="imageContainer">
+            <img src="Imagens/360Modena.jpg" alt="Imagem 1" class="active">
+            <img src="Imagens/BMW_M4.jpg" alt="Imagem 2">
+            <img src="Imagens/McLarenSpider.jpg" alt="Imagem 3">
+        </div>
+    </div>
+
+    <script>
+        const images = document.querySelectorAll("#imageContainer img");
+        let index = 0;
+
+        setInterval(() => {
+            images[index].classList.remove("active");
+            index = (index + 1) % images.length;
+            images[index].classList.add("active");
+        }, 8000);
+    </script>
+</body>
+</html>
