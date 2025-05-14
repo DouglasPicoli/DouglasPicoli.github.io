@@ -1,0 +1,242 @@
+<html>
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        tr {
+            color: #ffffff;
+            font-family:'Poppins', sans-serif;
+        }
+
+        td {
+            background-color: #252525;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        th, h1{
+            color: #97404a;
+        }
+
+        .lista {
+            background-color: #2a0404;
+            padding: 5px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .foot {
+            padding: 20px;
+        }
+
+        .botoes {
+            padding: 10px 100px;
+            display: flex;
+            gap: 10px;
+            color: rgb(255, 255, 255);
+            background-color: #000000;
+            font-size: 20px;
+            border: none;                  
+            cursor: pointer;              
+            transition: all 0.3s ease;  
+            width: 100%;   
+        }
+
+        .menu {
+            padding: 10px 100px;
+            display: flex;
+            gap: 10px;
+            color: rgb(255, 255, 255);
+            background-color: #2a0404;
+            font-size: 20px;
+            border: none;                  
+            cursor: pointer;              
+            transition: all 0.3s ease;  
+        }
+
+        .botoes:hover, .menu:hover {
+            background-color: #a00000;
+            transform: scale(1.05);
+        }
+
+        a {
+            color: rgb(114, 114, 114);
+            text-decoration: none;
+            transition: filter 0.3s;
+        }   
+
+        a:hover {
+            filter: brightness(2);
+        }
+        .logo img {
+            width: 25%;
+        }
+        </style>
+
+        <header>
+        <div class="logo"><img src="Imagens/logo2.png"></div>
+    </header>
+    <title>Tabela</title>
+
+    <div class="lista">
+        <button class="menu" onclick="window.location.href='index.html'">HOME</button>
+        <button class="menu" onclick="window.location.href='carros.html'">CARROS</button>
+    </div>
+
+        <h1>Tabela de Comparação</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Carro</th>
+                    <th>Motor</th>
+                    <th>Desempenho</th>
+                    <th>Consumo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ford Mustang V6 Conversível</td>
+                    <td>3.7L V6, com cerca de 300-330 cv e 380 Nm de torque</td>
+                    <td>0 a 100 km/h em 5,5 a 6 segundos</td>
+                    <td>8 a 10 km/l na cidade e 12 a 14 km/l na estrada</td>
+                </tr>
+                <tr>
+                    <td>Porsche 718 Boxster</td>
+                    <td>718 Boxster: 2.0L turbo de 300 cv 718 Boxster S: 2.5L turbo de 350 cv</td>
+                    <td>0 a 100 km/h em 4,7 segundos (versão S)</td>
+                    <td>9-10 km/l na cidade e 12-13 km/l na estrada</td>
+                </tr>
+                <tr>
+                    <td>Porsche 911 Carrera</td>
+                    <td>3.0L turbo de 6 cilindros, 385 cv</td>
+                    <td>0 a 100 km/h em 4,2 segundos</td>
+                    <td>9-10 km/l na cidade e 12-13 km/l na estrada</td>
+                </tr>
+                <tr>
+                    <td>Chevrolet Camaro SS</td>
+                    <td>6.2L V8, 455 cv</td>
+                    <td>0 a 100 km/h em 4 segundos</td>
+                    <td>6-8 km/l na cidade e 10-12 km/l na estrada</td>
+                </tr>
+                <tr>
+                    <td>Porsche Boxster</td>
+                    <td>2.0L turbo de 300 cv (versão base).</td>
+                    <td>0 a 100 km/h em 5,1 segundos</td>
+                    <td>9-10 km/l na cidade e 12-13 km/l na estrada</td>
+                </tr>
+                <tr>
+                    <td>Porsche Cayman</td>
+                    <td>2.0L turbo de 300 cv (versão base)</td>
+                    <td>0 a 100 km/h em 5,1 segundos</td>
+                    <td>9-10 km/l na cidade e 12-13 km/l na estrada</td>
+                </tr>
+                <tr>
+                    <td>Mitsubishi Lancer Evolution X</td>
+                    <td>2.0L turbo de 295 cv</td>
+                    <td>0 a 100 km/h em 5,0 segundos</td>
+                    <td>7-9 km/l na cidade e 10-12 km/l na estrada</td>
+                </tr>
+                <tr>
+                    <td>Maserati GranCabrio</td>
+                    <td>4.7L V8 atmosférico, 460 cv</td>
+                    <td>0 a 100 km/h em 5,0 segundos</td>
+                    <td>6-8 km/l na cidade e 10-12 km/l na estrada</td>
+                </tr>
+                <tr>
+                    <td>Ford Mustang Shelby GT500</td>
+                    <td>5.2L V8 supercharged, 760 cv</td>
+                    <td>0 a 100 km/h em 3,5 segundos</td>
+                    <td>6-8 km/l na cidade e 10-12 km/l na estrada</td>
+                </tr>
+                <tr>
+                    <td>Ford Mustang GT V8</td>
+                    <td>5.0L V8, 450 cv</td>
+                    <td>0 a 100 km/h em 4,2 segundos</td>
+                    <td>7-9 km/l na cidade e 10-12 km/l na estrada</td>
+                </tr>
+                <tr>
+                    <td>Lamborghini Gallardo MT</td>
+                    <td>5.0L V10, 520 cv (versão básica)</td>
+                    <td>0 a 100 km/h em 4,2 segundos</td>
+                    <td>6-8 km/l na cidade e 10-12 km/l na estrada</td>
+                </tr>
+                <tr>
+                    <td>Lamborghini Gallardo LP560-4 Spyder</td>
+                    <td>5.2L V10, 560 cv</td>
+                    <td>0 a 100 km/h em 4,0 segundos</td>
+                    <td>6-8 km/l na cidade e 10-12 km/l na estrada</td>
+                </tr>
+                <tr>
+                    <td>BMW M4</td>
+                    <td>3.0L turbo de 6 cilindros, 473 cv (versão padrão) ou 503 cv (versão Competition)</td>
+                    <td>0 a 100 km/h em 3,8 segundos (versão Competition)</td>
+                    <td>8-10 km/l na cidade e 12-14 km/l na estrada</td>
+                </tr>
+                <tr>
+                    <td>BMW M3</td>
+                    <td>3.0L turbo de 6 cilindros, 473 cv (versão padrão) ou 503 cv (versão Competition)</td>
+                    <td>0 a 100 km/h em 4,1 segundos (versão Competition)</td>
+                    <td>8-10 km/l na cidade e 12-14 km/l na estrada</td>
+                </tr>
+                <tr>
+                    <td>Ferrari Portofino</td>
+                    <td>3.9L V8 twin-turbo, 600 cv</td>
+                    <td>0 a 100 km/h em 3,5 segundos</td>
+                    <td>9-11 km/l na cidade e 13-15 km/l na estrada</td>
+                </tr>
+                <tr>
+                    <td>Ferrari California</td>
+                    <td>4.3L V8 (versão original) ou 3.9L V8 turbo (California T), 502 cv (versão original) ou 560 cv (California T)</td>
+                    <td>0 a 100 km/h em 3,6 segundos (California T)</td>
+                    <td>8-10 km/l na cidade e 12-14 km/l na estrada</td>
+                </tr>
+                <tr>
+                    <td>Ferrari 360 Modena</td>
+                    <td>3.6L V8, 400 cv</td>
+                    <td>0 a 100 km/h em 4,5 segundos</td>
+                    <td>7-9 km/l na cidade e 11-13 km/l na estrada</td>
+                </tr>
+                <tr>
+                   <td>Dodge Challenger RT</td>
+                   <td>5.7L V8 HEMI, 375 cv</td>
+                   <td>0 a 100 km/h em 5,0 segundos</td>
+                   <td>7-9 km/l na cidade e 11-13 km/l na estrada</td>
+                </tr>
+                <tr>
+                    <td>Chevrolet Corvette C7</td>
+                    <td>6.2L V8, 460 cv (versão padrão)</td>
+                    <td>0 a 100 km/h em 3,7 segundos</td>
+                    <td>9-11 km/l na cidade e 12-14 km/l na estrada</td>
+                 </tr>
+                <tr>
+                    <td>Chevrolet Corvette C6</td>
+                    <td>6.0L V8, 400 cv (versão padrão)</td>
+                    <td>0 a 100 km/h em 4,2 segundos</td>
+                    <td>8-10 km/l na cidade e 12-14 km/l na estrada</td>
+                 </tr>
+                 <tr>
+                    <td>Tesla Model 3</td>
+                    <td>Elétrico, com até 449 cv (versão Performance)</td>
+                    <td>0 a 100 km/h em 3,3 segundos (versão Performance)</td>
+                    <td>15-18 kWh/100 km</td>
+                 </tr>
+                 <tr>
+                    <td>McLaren 600 LT Spider</td>
+                    <td>3.8L V8 twin-turbo, 592 cv</td>
+                    <td>0 a 100 km/h em 2,9 segundos</td>
+                    <td>8-10 km/l na cidade e 12-14 km/l na estrada</td>
+                 </tr>
+                 <tr>
+                    <td>Nissan GTR-R35</td>
+                    <td>3.8L V6 twin-turbo, 570 cv (versão Nismo pode chegar a 600 cv)</td>
+                    <td>0 a 100 km/h em 2,9 segundos</td>
+                    <td>8-10 km/l na cidade e 12-14 km/l na estrada</td>
+                 </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
